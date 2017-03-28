@@ -6,10 +6,13 @@
  * Time: 18:47
  */
 $a = 7;
-echo $a++;//8
+echo $a++;//7
 echo '<br>';
 
 $f = '10test';
+$b = (int)$f;
+echo $b;
+echo "<br>";
 //var_dump(is_integer($f));//nothing
 //echo (is_string($f));//1
 echo (is_bool($f));//nothing
@@ -19,7 +22,7 @@ echo "<br>";
 $a = 1;
 $b = 0;
 $c ='';
-var_dump($a = null);// hothing
+var_dump($a = null);// nothing
 var_dump($b = null);//null
 var_dump($c = null);//null
 $b = 5;
