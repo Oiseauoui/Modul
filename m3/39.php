@@ -18,8 +18,15 @@ class Caller {
 
     }
 }
+class Helper {
+	public function hello() {
+		Logger::save(__METHOD__);
+	}
+}
 $caller = new Caller();
+$helper = new Helper();
+$helper->hello();
 $caller->hello();
 $caller->hello();
 sleep(1);
-$caller->hello();
+$caller->hello(); 
